@@ -20,8 +20,8 @@ namespace Insuranace_app
             Console.WriteLine("DUI's" + yourDui);
             Console.WriteLine("Tickets?" + yourTickets);
             bool ageTrue = yourAge > 15;
-            bool tickTrue = yourTickets > 3;
-            bool qualTrue = ageTrue && tickTrue && yourDui;
+            bool tickTrue = yourTickets < 3;
+            bool qualTrue = ageTrue && tickTrue && (yourDui == false);
             Console.WriteLine("Qualified " + qualTrue);
 
             Console.ReadLine();
