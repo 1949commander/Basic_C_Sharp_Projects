@@ -10,33 +10,49 @@ namespace Switch_Statment
     {
         static void Main(string[] args)
         {
-            int day = 8;
-            switch (day)
             {
-                case 1:
-                    Console.WriteLine("Monday");
-                    break;
-                case 2:
-                    Console.WriteLine("Tuesday");
-                    break;
-                case 3:
-                    Console.WriteLine("Wednesday");
-                    break;
-                case 4:
-                    Console.WriteLine("Thursday");
-                    break;
-                case 5:
-                    Console.WriteLine("Friday");
-                    break;
-                case 6:
-                    Console.WriteLine("Saturday");
-                    break;
-                case 7:
-                    Console.WriteLine("Sunday");
-                    break;
-                default:
-                    Console.WriteLine("Looking forward to the Weekend.");
-                    break;
+                int i = 0;
+                while (i < 5)
+                {
+                    Console.WriteLine(i);
+                    i++;
+                }
+
+                Console.WriteLine("Guess a number?");
+                int number = Convert.ToInt32(Console.ReadLine());
+                bool isGuessed = number == 12;
+
+                do
+                {
+                    switch (number)
+                    {
+                        case 62:
+                            Console.WriteLine("You guessed 62. Try again.");
+                            Console.WriteLine("Guess a number?");
+                            number = Convert.ToInt32(Console.ReadLine());
+                            break;
+                        case 29:
+                            Console.WriteLine("You guessed 29. Try again.");
+                            Console.WriteLine("Guess a number?");
+                            number = Convert.ToInt32(Console.ReadLine());
+                            break;
+                        case 55:
+                            Console.WriteLine("You guessed 55. Try again.");
+                            Console.WriteLine("Guess a number?");
+                            number = Convert.ToInt32(Console.ReadLine());
+                            break;
+                        case 12:
+                            Console.WriteLine("You guessed 12. That is correct!.");
+                            isGuessed = true;
+                            break;
+                        default:
+                            Console.WriteLine("Error");
+                            Console.WriteLine("Guess a number?");
+                            number = Convert.ToInt32(Console.ReadLine());
+                            break;
+                    }
+                }
+                while (!isGuessed);
             }
             Console.ReadLine();
         }
