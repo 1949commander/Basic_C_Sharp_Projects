@@ -20,6 +20,7 @@ namespace exception_handling
                 {
                     var numberThree = numberOne / num;
                     Console.WriteLine(numberOne + " divided by " + num + " equals " + numberThree);
+                    Console.WriteLine("remaider{0} ", (numberOne % num));
                 }
                                           
             Console.ReadLine();
