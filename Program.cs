@@ -25,11 +25,11 @@ namespace exception_handling
                                           
             Console.ReadLine();
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
                 Console.WriteLine("Please type a whole number...");
             }
-            catch (DivideByZeroException ex)
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("Please do not divide by zero....");
             }
