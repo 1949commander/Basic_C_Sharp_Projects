@@ -24,7 +24,10 @@ namespace methods_2_Math
         {
             return x / y;
         }
-        public int x { get; set; }
-        public int y { get; set; }
+
+        public static int RemMethod(int x, int y)
+        {
+            return x % y;
+        }
     }
  }
