@@ -12,12 +12,13 @@ namespace More_Methods
 
         public static double PlusMethod(double x, double y)
         {
-            return x * y;
+           return x * y;
         }
 
         public static int PlusMethod(string x, int y)
         {
-            return x - y;
+            int xInt2 = System.Convert.ToInt32(x);
+            return xInt2 - y;
         }
     }
 }

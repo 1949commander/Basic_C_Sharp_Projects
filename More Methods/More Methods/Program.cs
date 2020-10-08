@@ -14,10 +14,11 @@ namespace More_Methods
             Console.WriteLine("Add Intergers: " + myNum1);
 
             double myNum2 = Class1.PlusMethod(2.3, 3.5);
-            Console.WriteLine("Multiply Decimal: " + myNum2);
+            int myNum2Int = System.Convert.ToInt32(myNum2);
+            Console.WriteLine("Multiply Decimal: " + myNum2Int);
             
 
-            int myNum3 = Class1.PlusMethod(2 , 3);
+            int myNum3 = Class1.PlusMethod(5 , 3);
             Console.WriteLine("Multiply Decimal: " + myNum3);
             Console.ReadLine();
 
