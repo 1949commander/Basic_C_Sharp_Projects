@@ -12,6 +12,5 @@ namespace Methods_3
         {
             return Num1 + Num2;
         }
-
     }
 }

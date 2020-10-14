@@ -17,16 +17,17 @@ namespace Methods_3
             int UserNum1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter an optional interger: ");
             string UserNum2 = Console.ReadLine();
-            bool result = int.TryParse(UserNum2, out var n);
+            //bool result = int.TryParse(UserNum2, out var n);
 
             if (string.IsNullOrEmpty(UserNum2))
             {
                 int myNum1 = Class1.MethodOne(UserNum1);
                 Console.WriteLine("Add Integers: " + myNum1);
             }
-            else result == true;
+            else
             {
-                int myNum1 = Class1.MethodOne(UserNum1, n);
+                int myNum1 = Class1.MethodOne(UserNum1, Convert.ToInt32(UserNum2));
+                int myNum2 = Class1.MethodOne(Convert.ToInt32(UserNum2), Convert.ToInt32(UserNum2));
                 Console.WriteLine("Add Integers: " + myNum1, + myNum2);
             }
 
