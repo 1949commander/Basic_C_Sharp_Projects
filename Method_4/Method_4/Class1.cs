@@ -11,9 +11,37 @@ namespace Method_4
 
     {
         public int NumOne;
-        public int NumTwo;
+        
+        public static void MyMethod(int intOne)
+        {
+            NumOne = intOne + 23;
+            NumTwo = intTwo;
+        }
+    }
+}
 
-        public static void MyMethod(int intOne, int intTwo)
+namespace Method_5
+{
+    public class Numbers
+
+    {
+        public int NumOne;
+
+        public static void MyMethod(int intOne)
+        {
+            NumOne = intOne + 23;
+            NumTwo = intTwo;
+        }
+    }
+}
+namespace Method_6
+{
+    public class Numbers
+
+    {
+        public int NumOne;
+
+        public static void MyMethod(int intOne)
         {
             NumOne = intOne + 23;
             NumTwo = intTwo;

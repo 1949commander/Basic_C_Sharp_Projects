@@ -12,10 +12,7 @@ namespace Method_4
         {
             Console.WriteLine("Enter an interger: ");
             int intOne = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter another interger: ");
-            int intTwo = Convert.ToInt32(Console.ReadLine());
-
+            
         }
-        Numbers MyMethod = new Numbers(9);
     }
 }
